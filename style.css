@@ -249,10 +249,11 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 .banner {
     background-image:
-    url("PictureOfRiverAndMountains.jpeg");
-    background-size: auto;
+    url("Screenshot 2023-05-30 at 5.37.46 PM.png");
+    background-size: cover;
     font-weight: bolder;
     font-family: "Inter", serif;
+    height: 880px;
 }
 
 .register-button {
@@ -286,6 +287,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 80px;
 }
 .container {
     background-color: white;
@@ -365,4 +368,7 @@ hr{
 .submit-container{
     padding: 20px 50px 20px 0;
 }
-
+.mainPage-break{
+    margin: 70px 0 0;
+    border: 2px solid #000000;
+}
