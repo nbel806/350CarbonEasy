@@ -21,7 +21,7 @@
     </ul>
 </div>
 <!--Banner with background image-->
-<div class="banner w3-padding-top-64 w3-center" >
+<div class="banner w3-padding-top-64 w3-center" title="Mountain with River Background" >
     <div class="w3-padding-top-64">
         <h1 class="banner-heading">Start Saving the Planet Today</h1>
         <h5 class="banner-heading w3-padding">Become a Carbon Easy Member Now</h5>
@@ -117,6 +117,12 @@
         }
         console.log("here")
     }
+    //escape key for assesability
+    document.addEventListener('keyup', function (e){
+        if(e.keyCode ===27){
+            modal.style.display = "none";
+        }
+    })
 </script>
 </html>
 
