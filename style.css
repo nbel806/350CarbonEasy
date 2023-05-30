@@ -6,7 +6,7 @@ article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{disp
 audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
 audio:not([controls]){display:none;height:0}[hidden],template{display:none}
 a{background-color:transparent}a:active,a:hover{outline-width:0}
-abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+abbr[title]{border-bottom:none;text-decoration:underline;}
 b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
 small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
 sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
@@ -38,7 +38,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child{padding-left:16px}
 .w3-btn,.w3-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
 .w3-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
-.w3-btn,.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+.w3-btn,.w3-button{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .w3-disabled,.w3-btn:disabled,.w3-button:disabled{cursor:not-allowed;opacity:0.3}.w3-disabled *,:disabled *{pointer-events:none}
 .w3-btn.w3-disabled:hover,.w3-btn:disabled:hover{box-shadow:none}
 .w3-badge,.w3-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.w3-badge{border-radius:50%}
@@ -98,8 +98,8 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-display-topleft{position:absolute;left:0;top:0}.w3-display-topright{position:absolute;right:0;top:0}
 .w3-display-bottomleft{position:absolute;left:0;bottom:0}.w3-display-bottomright{position:absolute;right:0;bottom:0}
 .w3-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
-.w3-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
-.w3-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.w3-display-left{position:absolute;top:50%;left:0;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.w3-display-right{position:absolute;top:50%;right:0;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
 .w3-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
 .w3-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
 .w3-display-container:hover .w3-display-hover{display:block}.w3-display-container:hover span.w3-display-hover{display:inline-block}.w3-display-hover{display:none}
@@ -108,7 +108,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-round-small{border-radius:2px}.w3-round,.w3-round-medium{border-radius:4px}.w3-round-large{border-radius:8px}.w3-round-xlarge{border-radius:16px}.w3-round-xxlarge{border-radius:32px}
 .w3-row-padding,.w3-row-padding>.w3-half,.w3-row-padding>.w3-third,.w3-row-padding>.w3-twothird,.w3-row-padding>.w3-threequarter,.w3-row-padding>.w3-quarter,.w3-row-padding>.w3-col{padding:0 8px}
 .w3-container,.w3-panel{padding:0.01em 16px}.w3-panel{margin-top:16px;margin-bottom:16px}
-.w3-code,.w3-codespan{font-family:Consolas,"courier new";font-size:16px}
+.w3-code,.w3-codespan{font-family:Consolas,"courier new",serif;font-size:16px}
 .w3-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
 .w3-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
 .w3-card,.w3-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
@@ -234,8 +234,17 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 
-.custom-brand-colour{
+.custom-colour{
     color:#c400fc
+}
+.custom-background-colour{
+    background-color: #c400fc;
+}
+.custom-background-colour-hover:hover{
+    background-color: #c400fc;
+}
+.custom-colour-hover:hover{
+    color: #c400fc;
 }
 
 .margin-left-60{
@@ -245,7 +254,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     margin-left: 150px;
 }
 
-.text-custom-purple,.hover-text-custom-purple:hover{color:#c400fc!important; cursor: pointer;}
+.hover-text:hover{cursor: pointer;}
 
 .banner {
     background-image:
@@ -271,7 +280,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     margin-top: 30px;
     padding: 15px 25px;
     font-size: 35px;
-    background: #c400fc;
     color:white;
     border:none;
     border-radius: 5px;
@@ -295,7 +303,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 .container {
     background-color: white;
-    color: #c400fc;
     border-radius: 20px;
     width: 600px;
     height: 200px;
@@ -332,7 +339,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     font-family: Inter,serif;
 }
 .close {
-    color: #c400fc;
     float: right;
     font-size: 32px;
     font-weight: bold;
@@ -358,7 +364,6 @@ input[type=text], input[type=password] {
 }
 .signupbtn{
     width: 50%;
-    background-color: #c400fc;
     border: none;
     color: white;
     cursor: pointer;
@@ -367,7 +372,7 @@ input[type=text], input[type=password] {
 
 }
 hr{
-    border: 2px solid #c400fc;
+    border: 2px solid;
     margin-left: 100px;
     margin-right: 100px;
 }
