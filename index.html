@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" >
     <link rel="icon" type="image/x-icon" href="CarbonEasyWindmill.png" title="Windmill logo">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
 <!--Windmill icons created by DinosoftLabs - Flaticon-->
     <title>Carbon Easy - Home</title>
 </head>
@@ -22,24 +23,24 @@
 <!--Banner with background image-->
 <div class="banner w3-padding-top-64 w3-center" >
     <div class="w3-padding-top-64">
-        <h1 class="banner-heading w3-padding-top-64">Start saving the planet</h1>
-        <h5 class="banner-heading w3-padding">Become a Carbon Easy Member Today</h5>
-        <button class="register-button" id="trigger-modal">Register</button>
+        <h1 class="banner-heading">Start Saving the Planet Today</h1>
+        <h5 class="banner-heading w3-padding">Become a Carbon Easy Member Now</h5>
+        <button class="register-button" id="trigger-modal">REGISTER</button>
     </div>
     <hr class="mainPage-break">
     <div class="flexbox w3-padding-top-64 w3-center">
-        <div class="container w3-padding-16 w3-margin-top w3-margin-right">
+        <div class="container w3-padding-16 w3-margin-top">
             <h1 class="container-heading">Why do the quiz?</h1>
             <p>Answer a few questions and we'll work out your estimated annual carbon footprint. You can use this to work out where you can help save the planet. WERE ALL IN THIS TOGETHER!</p>
         </div>
-        <div class="container w3-padding-16 w3-margin-top w3-margin-left">
+        <!--Info boxes for FAQ-->
+        <div class="container w3-padding-16 w3-margin-top">
             <h1 class="container-heading">Why you should sign up?</h1>
             <p>Signing up will unlock plans, these plans will show you the easiest ways for you to reduce carbon emisions. Having an account saves these plans and allows us to check in with you for updates.</p>
         </div>
     </div>
 
 </div>
-<!--Info boxes for FAQ-->
 
 <!--Footer-->
 <div class="footer w3-padding-small w3-center">
@@ -47,6 +48,7 @@
 </div>
 </body>
 
+<!--Modal Form-->
 <div id="form-ct" class="modal">
     <form class="modal-content w3-text-black">
         <span class="close">&times;</span>
@@ -95,7 +97,7 @@
     var modal = document.getElementById("form-ct");
 
     var btn = document.getElementById("trigger-modal");
-    // Get the <span> element that closes the modal
+    
     var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks the button, open the modal
@@ -103,7 +105,7 @@
         modal.style.display = "block";
     }
 
-    // When the user clicks on <span> (x), close the modal
+    // When the user clicks on x, close the modal
     span.onclick = function() {
         modal.style.display = "none";
     }

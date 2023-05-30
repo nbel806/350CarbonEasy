@@ -24,10 +24,10 @@ legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}t
 [type=search]::-webkit-search-decoration{-webkit-appearance:none}
 ::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
 /* End extract */
-html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+html,body{font-family:"Inter",sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
 h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
 .w3-serif{font-family:serif}.w3-sans-serif{font-family:sans-serif}.w3-cursive{font-family:cursive}.w3-monospace{font-family:monospace}
-h1,h2,h3,h4,h5,h6{font-family: "Inter", serif;font-weight:400;margin:10px 0}.w3-wide{letter-spacing:4px}
+h1,h2,h3,h4,h5,h6{font-family: "Inter", serif;margin:10px 0}.w3-wide{letter-spacing:4px}
 hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
 .w3-table,.w3-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.w3-table-all{border:1px solid #ccc}
@@ -260,7 +260,9 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     margin-top: 30px;
     padding: 15px 25px;
     font-size: 35px;
+    width: 300px;
     border:none;
+    background-color: white;
     border-radius: 5px;
     color: black;
     transition-duration: 0.2s;
@@ -278,16 +280,17 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 }
 .banner-heading {
     font-family: "Inter", serif;
-    font-weight: bolder;
-    font-size: xx-large;
+    font-weight: 800;
+    font-size: 60px;
     color:white;
+    text-shadow: 5px 5px #000000;
 }
 .flexbox {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     padding-bottom: 80px;
 }
 .container {
@@ -297,7 +300,10 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     width: 600px;
     height: 200px;
     font-family: "Inter", serif;
+    font-size: 18px;
+    font-weight: 400;
     padding: 15px;
+    margin: 50px;
 }
 .footer {
     height: 70px;
@@ -356,8 +362,8 @@ input[type=text], input[type=password] {
     border: none;
     color: white;
     cursor: pointer;
-    padding: 20px;
-    margin-top: 20px;
+    padding: 30px;
+    margin-top: 10px;
 
 }
 hr{
@@ -369,6 +375,10 @@ hr{
     padding: 20px 50px 20px 0;
 }
 .mainPage-break{
-    margin: 70px 0 0;
+    margin: 60px 0 0;
     border: 2px solid #000000;
+}
+.container-heading{
+    font-weight: 800;
+    font-size: 35px;
 }
